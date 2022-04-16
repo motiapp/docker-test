@@ -5,7 +5,7 @@ When running a docker container, connections to google.com over https don't reso
 
 2) Run `docker-compose build` and `docker-compose up`.
 
-3) View the open ports in click the web icon to view the page in the browser.
+3) View the open ports and click the web icon to view the page in the browser.
 
 4) You should see a basic hello message.
 
