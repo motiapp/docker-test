@@ -16,8 +16,12 @@ github:
     addLabel: prebuilt-in-gitpod
 tasks:
   - init: |
+      cd app
+      npm install
+      cd ..
       docker-compose build
   - command: |
+      docker-compose build
       docker-compose up
 ports:
   - port: 3000
