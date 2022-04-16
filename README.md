@@ -14,3 +14,6 @@ When running a docker container, connections to google.com over https don't reso
 6) In the browser change path to `/google`. No response is returned and the server will eventually time out.
 
 7) Alternatively you can enter the container using `docker exec -it demo bash` and then try `curl -v https://www.google.com`.
+
+Fix: if you don't use **docker-compose** and use the **docker run** syntax the issue goes away.
+Command: `docker run -it -p 3000:3000 --name demo-app-run demo-express-app`

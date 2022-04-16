@@ -5,8 +5,10 @@ WORKDIR /demo-app
 
 COPY ./app /demo-app
 
+RUN npm install -g pm2
+
 RUN npm install
 
 EXPOSE 3000
 
-CMD ["npm", "start"]
+CMD ["pm2-dev", "src/index.js"]

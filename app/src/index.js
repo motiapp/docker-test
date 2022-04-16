@@ -7,7 +7,7 @@ const host = '0.0.0.0'
 app.use(express.json())
 
 app.get('/', async (req, res) => {
-  res.send('Basic hello response.')
+  res.send('Basic hello response.<br/>' + new Date().toString())
 })
 
 /* Fetch some Google URL and then respond with text */
