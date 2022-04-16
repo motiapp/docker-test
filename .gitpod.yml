@@ -22,7 +22,8 @@ tasks:
       docker-compose build
   - command: |
       docker-compose build
-      docker-compose up
+      docker run -it -p 3000:3000 --name demo-app-run demo-express-app
+#     docker-compose up
 ports:
   - port: 3000
     onOpen: open-browser
